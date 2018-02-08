@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Friend Finder</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+	    crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	    crossorigin="anonymous"></script> -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+	    crossorigin="anonymous"></script>
+
+<!-- 	<script src="assets/survey.js"></script> -->
+
+</head>
+
+<body>
+	<!-- Main Container -->
+	<div class="container main-container">
+		<!-- Top Jumbotron -->
+		<div class="row justify-content-center">
+			<div class="col-12">
+				<div class="jumbotron main-jumbo">
+					<i class="fas fa-users fa-7x"></i>
+					<h1 class="display-4">Friend Finder</h1>
+					<p class="lead">
+						<a class="btn btn-primary btn-lg" href="survey.html" role="button">Survey</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- /Top Jumbotron -->
+		<!-- Survey Card -->
+		<div class="card survey-card">
+			<div class="card-header">
+		    Survey
+		  	</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">About You</h5>
+		    	<form>
+				  	<div class="form-group">
+				    	<label for="name">Name</label>
+				    	<input type="name" class="form-control" id="name" aria-describedby="name" placeholder="Name">
+				  	</div>
+				  	<div class="form-group">
+				    	<label for="photo">Link To Photo</label>
+				    	<input type="photo-address" class="form-control" id="photo" placeholder="http://yourphotoaddress.com">
+				 	</div>
+
+					<div class="col-12 question">
+						<h4>Question 1</h4>
+						<h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
+						<select class="survey-select" id="q1">
+						  	<option selected>Pick one</option>
+						  	<option value="1">1 (Strongly Disagree)</option>
+						  	<option value="2">2</option>
+						  	<option value="3">3</option>
+						  	<option value="4">4</option>
+						  	<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+					<div class="col-12 question">
+						<h4>Question 2</h4>
+						<h5>Generally speaking, you rely more on your experience than your imagination.</h5>
+						<select class="survey-select" id="q2">
+						  	<option selected>Pick one</option>
+						  	<option value="1">1 (Strongly Disagree)</option>
+						  	<option value="2">2</option>
+						  	<option value="3">3</option>
+						  	<option value="4">4</option>
+						  	<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+					<div class="col-12 question">
+						<h4>Question 3</h4>
+						<h5>You find it easy to stay relaxed and focused even when there is some pressure.</h5>
+						<select class="survey-select" id="q3">
+						  	<option selected>Pick one</option>
+						  	<option value="1">1 (Strongly Disagree)</option>
+						  	<option value="2">2</option>
+						  	<option value="3">3</option>
+						  	<option value="4">4</option>
+						  	<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+					<div class="col-12 question">
+						<h4>Question 4</h4>
+						<h5>People can rarely upset you.</h5>
+						<select class="survey-select" id="q4">
+						  	<option selected>Pick one</option>
+						  	<option value="1">1 (Strongly Disagree)</option>
+						  	<option value="2">2</option>
+						  	<option value="3">3</option>
+						  	<option value="4">4</option>
+						  	<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+					<div class="col-12 question">
+						<h4>Question 5</h4>
+						<h5>It is often difficult for you to relate to other people’s feelings.</h5>
+						<select class="survey-select" id="q5">
+						  	<option selected>Pick one</option>
+						  	<option value="1">1 (Strongly Disagree)</option>
+						  	<option value="2">2</option>
+						  	<option value="3">3</option>
+						  	<option value="4">4</option>
+						  	<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+					<div class="col-12 question">
+						<h4>Question 6</h4>
+						<h5>In a discussion, truth should be more important than people’s sensitivities.</h5>
+						<select class="survey-select" id="q6">
+						  	<option selected>Pick one</option>
+						  	<option value="1">1 (Strongly Disagree)</option>
+						  	<option value="2">2</option>
+						  	<option value="3">3</option>
+						  	<option value="4">4</option>
+						  	<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+					<div class="col-12 question">
+						<h4>Question 7</h4>
+						<h5>You rarely get carried away by fantasies and ideas.</h5>
+						<select class="survey-select" id="q7">
+						  	<option selected>Pick one</option>
+						  	<option value="1">1 (Strongly Disagree)</option>
+						  	<option value="2">2</option>
+						  	<option value="3">3</option>
+						  	<option value="4">4</option>
+						  	<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+					<div class="col-12 question">
+						<h4>Question 8</h4>
+						<h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h5>
+						<select class="survey-select" id="q8">
+						  	<option selected>Pick one</option>
+						  	<option value="1">1 (Strongly Disagree)</option>
+						  	<option value="2">2</option>
+						  	<option value="3">3</option>
+						  	<option value="4">4</option>
+						  	<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+					<div class="col-12 question">
+						<h4>Question 9</h4>
+						<h5>You feel more energetic after spending time with a group of people.</h5>
+						<select class="survey-select" id="q9">
+						  	<option selected>Pick one</option>
+						  	<option value="1">1 (Strongly Disagree)</option>
+						  	<option value="2">2</option>
+						  	<option value="3">3</option>
+						  	<option value="4">4</option>
+						  	<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+					<div class="col-12 question">
+						<h4>Question 10</h4>
+						<h5>You feel more energetic after spending time with a group of people.</h5>
+						<select class="survey-select" id="q10">
+						  	<option selected>Pick one</option>
+						  	<option value="1">1 (Strongly Disagree)</option>
+						  	<option value="2">2</option>
+						  	<option value="3">3</option>
+						  	<option value="4">4</option>
+						  	<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+					<div class="col-12  submit-button">
+				  	<button type="button" class="btn btn-primary" data-toggle="modal" id="submitButton" data-target="surveyModal">Submit</button>
+				  	</div>
+				</form>
+				
+		  	</div>
+		</div>
+		<!-- /Survey Card -->
+	</div>
+	
+	<!-- /Main Container -->
+<!-- Modal -->
+<div id="surveyModal"  class="modal fade" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4>Your Best Match</h4>
+			</div>
+			<h5 id="matchName"></h5>
+			<img src="" id="matchImage" width=300px>
+		</div>
+		<div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+	</div>
+</div>
+<!-- /Modal -->
+<script>
+	$("#submitButton").on('click', function(){
+		var newSurveyData = {
+			name: $('#name').val(),
+			photo: $('#photo').val(),
+			values: [
+					$('#q1').val(),
+                    $('#q2').val(),
+                    $('#q3').val(),
+                    $('#q4').val(),
+                    $('#q5').val(),
+                    $('#q6').val(),
+                    $('#q7').val(),
+                    $('#q8').val(),
+                    $('#q9').val(),
+                    $('#q10').val(),
+			]
+		};
+		var currentURL = window.location.origin;
+
+		$.post(currentURL + "/api/survey-data", newSurveyData, function(data){
+			console.log(newSurveyData);
+			$("#matchName").text(data.name);
+			$("#matchImage").attr("src", data.photo);
+		
+			$("#surveyModal").modal('toggle');
+	});
+})
+
+
+</script>
+</body>
+
+</html>
