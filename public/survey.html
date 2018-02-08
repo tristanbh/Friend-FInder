@@ -200,6 +200,7 @@
 </div>
 <!-- /Modal -->
 <script>
+	// create object from user inputs
 	$("#submitButton").on('click', function(){
 		var newSurveyData = {
 			name: $('#name').val(),
@@ -217,13 +218,14 @@
                     $('#q10').val(),
 			]
 		};
+		//gets url from website
 		var currentURL = window.location.origin;
-
+		//ajax request from the post to retreive the best match data
 		$.post(currentURL + "/api/survey-data", newSurveyData, function(data){
 			console.log(newSurveyData);
 			$("#matchName").text(data.name);
 			$("#matchImage").attr("src", data.photo);
-		
+		// shows the survey modal with best match
 			$("#surveyModal").modal('toggle');
 	});
 })

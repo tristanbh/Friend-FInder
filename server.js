@@ -4,12 +4,13 @@ var path = require("path");
 
 var app = express();
 var PORT = process.env.PORT || 3000;
-app.use(express.static(__dirname + '/public'));
+// app.use(express.static(__dirname + '/public'));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 app.use(bodyParser.text());
+app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
+
 
 require('./routing/api-routes.js')(app);
 require('./routing/html-routes.js')(app);
